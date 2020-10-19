@@ -1,0 +1,51 @@
+html {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: $main-font;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.container {
+  padding-left: 8px;
+  padding-right: 8px;
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.title {
+  font-family: $secondary-font;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.text {
+  margin: 0;
+  text-align: center;
+}

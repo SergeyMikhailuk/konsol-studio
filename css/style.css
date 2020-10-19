@@ -1,0 +1,63 @@
+html {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+:root {
+  --main-font: 'Lato', sans-serif;
+  --secondary-font: 'Open Sans', sans-serif;
+}
+
+body {
+  font-family: var(--main-font);
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.container {
+  padding-left: 8px;
+  padding-right: 8px;
+  margin: 0 auto;
+}
+
+.section {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.link{
+  line-height: 0;
+  text-decoration: none;
+}
+
+/* header */
+
+
+
+/* banner */
+
+.banner {
+  background: linear-gradient(#33bbf1 70px, transparent 0px);
+}
+
+.banner-title {
+  font-family: 'Open Sans';
+  color: #fff;
+  font-size: 16px;
+}

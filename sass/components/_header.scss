@@ -1,0 +1,40 @@
+.header {
+  background-color: rgb(231, 238, 240);
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  padding: 22px;
+}
+
+.nav-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.nav-list .item:not(:last-child) {
+  margin-bottom: 2px;
+}
+
+.nav-list .link {
+  display: block;
+  color: #868686;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background-color 250ms linear, color 250ms linear;
+}
+
+.nav-list .link.current,
+.nav-list .link:hover,
+.nav-list .link:focus {
+  background-color: #ffbb42;
+  border-radius: 4px;
+  color: #fff;
+}

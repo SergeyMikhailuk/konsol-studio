@@ -1,0 +1,79 @@
+.how-it-works {
+  padding-bottom: 100px;
+}
+.works-title {
+  color: #394b50;
+  font-size: 18px;
+}
+
+.works-text {
+  color: #394b50;
+  margin-bottom: 94px;
+}
+
+.how-it-works .steps-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 128px;
+}
+
+.steps-list .item {
+  max-width: 400px;
+}
+
+.steps-list .item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.step {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.step .step-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+}
+
+.step .title {
+  padding-top: 20px;
+  margin-left: 20px;
+  color: #394b50;
+  font-family: $main-font;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.steps-list .text {
+  color: #7b7b7b;
+  font-family: $secondary-font;
+  line-height: 1.7;
+  font-size: 13px;
+}
+
+.get-start-btn {
+  display: block;
+  margin: 0 auto;
+  border: none;
+  outline: none;
+  width: 165px;
+  height: 46px;
+  border-radius: 3px;
+  font-family: $main-font;
+  color: #ffffff;
+  background-color: #ffbb42;
+  text-transform: uppercase;
+  transition: background-color 250ms linear;
+}
+
+.get-start-btn:hover,
+.get-start-btn:focus {
+  background-color: #e0a43c;
+}
