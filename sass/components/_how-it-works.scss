@@ -1,13 +1,39 @@
 .how-it-works {
+  padding-top: 36px;
   padding-bottom: 100px;
 }
-.works-title {
+
+.works-title,
+.works-text {
   color: #394b50;
+  font-family: $main-font;
   font-size: 18px;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 22px;
+  text-align: center;
+}
+
+.works-title {
+  font-family: "Gotham - Black";
+  font-size: 22px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: -0.75px;
+  line-height: normal;
+  text-transform: uppercase;
+  @media screen and(min-width: $desktop) {
+    font-size: 30px;
+  }
 }
 
 .works-text {
-  color: #394b50;
+  font-family: "Lato Light";
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
   margin-bottom: 94px;
 }
 
@@ -17,31 +43,64 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 128px;
+
+  @media screen and(min-width: $tablet) and(max-width: $desktop - 1px) {
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: baseline;
+  }
+
+  @media screen and(min-width: $desktop) {
+    flex-direction: row;
+  }
 }
 
 .steps-list .item {
   max-width: 400px;
-}
-
-.steps-list .item:not(:last-child) {
-  margin-bottom: 20px;
+  @media screen and(min-width: $tablet) and(max-width: $desktop - 1px) {
+    max-width: 320px;
+    margin-bottom: 15px;
+    &:nth-child(odd) {
+      margin-right: 10px;
+    }
+  }
+  &:not(:last-child) {
+    margin-bottom: 20px;
+    @media screen and(min-width: $tablet) {
+      margin-bottom: 0;
+    }
+  }
+  @media screen and(min-width: $desktop) {
+    max-width: 213px;
+    &:not(:last-child) {
+      margin-right: 80px;
+    }
+  }
 }
 
 .step {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-bottom: 20px;
+  @media screen and(min-width: $desktop) {
+    flex-direction: column;
+    margin-bottom: 33px;
+  }
 }
 
 .step .step-icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 70px;
+  width: 80px;
+  height: 64px;
+  @media screen and(min-width: $desktop) {
+    margin-bottom: 58px;
+  }
 }
 
 .step .title {
-  padding-top: 20px;
   margin-left: 20px;
   color: #394b50;
   font-family: $main-font;
@@ -49,6 +108,9 @@
   font-weight: 700;
   line-height: 1.1;
   text-transform: uppercase;
+  @media screen and(min-width: $desktop) {
+    margin-left: 0;
+  }
 }
 
 .steps-list .text {
@@ -56,6 +118,30 @@
   font-family: $secondary-font;
   line-height: 1.7;
   font-size: 13px;
+}
+
+.steps-block {
+  position: relative;
+}
+
+.pointer {
+  display: none;
+  position: absolute;
+  top: -10px;
+  @media screen and(min-width: $desktop) {
+    display: block;
+  }
+}
+
+.pointer.one {
+  left: 200px;
+}
+.pointer.two {
+  top: 30px;
+  left: 480px;
+}
+.pointer.three {
+  left: 780px;
 }
 
 .get-start-btn {

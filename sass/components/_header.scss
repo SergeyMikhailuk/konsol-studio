@@ -2,14 +2,26 @@
   background-color: rgb(231, 238, 240);
   padding-top: 8px;
   padding-bottom: 8px;
+  @media screen and(min-width: $desktop) {
+    padding: 0;
+  }
+}
+.header .container {
   display: flex;
   justify-content: space-around;
+  @media screen and(min-width: $desktop) {
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .header-logo {
   display: flex;
   align-items: center;
   padding: 22px;
+  @media screen and (min-width: $desktop) {
+    padding: 0;
+  }
 }
 
 .nav-list {
@@ -17,6 +29,11 @@
   margin: 0;
   list-style: none;
   text-align: center;
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 
 .nav-list .item:not(:last-child) {
@@ -29,6 +46,12 @@
   text-decoration: none;
   text-transform: uppercase;
   transition: background-color 250ms linear, color 250ms linear;
+  @media screen and(min-width: $desktop) {
+    padding-left: 21px;
+    padding-right: 21px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
 }
 
 .nav-list .link.current,
