@@ -1,9 +1,18 @@
 .banner {
-  background: linear-gradient(#33bbf1 85%, transparent 0px);
+  background: linear-gradient(#709dca 85%, transparent 0px);
   padding-top: 110px;
   padding-bottom: 30px;
+  @media screen and(max-width: $old-mobile - 1px) {
+    padding-top: 30px;
+  }
+  @media screen and(min-width: $old-mobile) and(max-width: $tablet) {
+    padding-top: 60px;
+  }
+  @media screen and(min-width: $tablet) {
+    padding-top: 90px;
+  }
   @media screen and (min-width: $desktop) {
-    background: linear-gradient(#33bbf1 82%, transparent 0px);
+    background: linear-gradient(#709dca 82%, transparent 0px);
   }
 }
 .banner-title,
@@ -17,12 +26,20 @@
 
 .banner-title {
   font-family: 'Gotham-Black', sans-serif;
-  font-size: 24px;
   font-weight: 700;
   font-style: normal;
   letter-spacing: -0.88px;
   line-height: normal;
   text-transform: uppercase;
+  @media screen and(min-width: $mobile) {
+    font-size: 20px;
+  }
+  @media screen and(min-width: $tablet) {
+    font-size: 24px;
+  }
+  @media screen and(min-width: $tablet-landscape) {
+    font-size: 28px;
+  }
   @media screen and (min-width: $desktop) {
     font-size: 35px;
   }
@@ -43,6 +60,12 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 67px;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+  }
   @media screen and (min-width: $desktop) {
     flex-direction: row;
     justify-content: center;
@@ -50,6 +73,18 @@
 }
 
 .form .list {
+  @media screen and(min-width: $tablet) and(max-width: $tablet-landscape - 1px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @media screen and(min-width: $tablet-landscape) and(max-width: $desktop - 1px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   @media screen and(min-width: $desktop) {
     display: flex;
   }
@@ -58,6 +93,16 @@
 .form .form-field {
   position: relative;
   margin-bottom: 10px;
+  &:nth-child(odd) {
+    @media screen and(min-width: $tablet) and(max-width: $tablet-landscape - 1px) {
+      margin-right: 10px;
+    }
+  }
+  @media screen and(min-width: $tablet-landscape) and(max-width: $desktop - 1px) {
+    &:nth-child(-n + 2) {
+      margin-right: 10px;
+    }
+  }
   @media screen and(min-width: $desktop) {
     margin-bottom: 0;
     margin-right: 10px;
@@ -71,6 +116,9 @@
   height: 46px;
   border-radius: 3px;
   padding-left: 44px;
+  @media screen and(min-width: $tablet-landscape) and(max-width: $desktop - 1px) {
+    min-width: 240px;
+  }
 }
 .form .form-input::placeholder {
   color: #a9a9a9;
@@ -87,16 +135,27 @@
 .btn-form-submit {
   outline: none;
   border: none;
+  min-width: 281px;
   border-radius: 3px;
   padding: 15px;
-  padding-left: 44px;
-  padding-right: 44px;
   height: 46px;
   background-color: #ffbb42;
   color: #ffffff;
   font-family: $secondary-font;
   text-transform: uppercase;
   transition: background-color 250ms linear;
+  @media screen and(min-width: $tablet) and(max-width: $desktop - 1px) {
+    margin: 0 auto;
+  }
+  @media screen and(min-width: $tablet-landscape) and(max-width: $desktop - 1px) {
+    min-width: 240px;
+    margin: 0;
+  }
+  @media screen and(min-width: $desktop) {
+    width: auto;
+    padding-left: 44px;
+    padding-right: 44px;
+  }
 }
 
 .btn-form-submit:hover {

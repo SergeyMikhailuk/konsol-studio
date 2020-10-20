@@ -1,7 +1,9 @@
-@import "./font";
-$main-font: "Lato", sans-serif;
-$secondary-font: "Open Sans", sans-serif;
+@import './font';
+$main-font: 'Lato', sans-serif;
+$secondary-font: 'Open Sans', sans-serif;
 
+$old-mobile: 479px;
 $mobile: 480px;
 $tablet: 768px;
+$tablet-landscape: 1024px;
 $desktop: 1200px;

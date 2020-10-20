@@ -1,14 +1,16 @@
 .header {
-  background-color: rgb(231, 238, 240);
   padding-top: 8px;
   padding-bottom: 8px;
   @media screen and(min-width: $desktop) {
     padding: 0;
   }
 }
+
 .header .container {
-  display: flex;
-  justify-content: space-around;
+  @media screen and(min-width: $mobile) {
+    display: flex;
+    justify-content: space-around;
+  }
   @media screen and(min-width: $desktop) {
     justify-content: space-between;
     align-items: center;
@@ -16,19 +18,46 @@
 }
 
 .header-logo {
-  display: flex;
-  align-items: center;
-  padding: 22px;
-  @media screen and (min-width: $desktop) {
+  @media screen and(max-width: $old-mobile) {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+  @media screen and(min-width: $mobile) {
+    display: flex;
+    align-items: center;
+    padding: 22px;
+  }
+  @media screen and(min-width: $desktop) {
     padding: 0;
   }
 }
 
 .nav-list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  text-align: center;
+  @media screen and(max-width: $old-mobile) {
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  @media screen and(min-width: $mobile) {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+  }
+  @media screen and(min-width: $tablet) and(max-width: $tablet-landscape - 1px) {
+    max-width: 370px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  @media screen and(min-width: $tablet-landscape) and(max-width: $desktop - 1px) {
+    max-width: 570px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
   @media screen and (min-width: $desktop) {
     display: flex;
     padding-top: 31px;
@@ -37,7 +66,12 @@
 }
 
 .nav-list .item:not(:last-child) {
-  margin-bottom: 2px;
+  @media screen and(max-width: $old-mobile) {
+    margin-bottom: 10px;
+  }
+  @media screen and(min-width: $mobile) {
+    margin-bottom: 2px;
+  }
   @media screen and(min-width: $desktop) {
     margin-bottom: 0;
     margin-right: 3px;
@@ -45,11 +79,29 @@
 }
 
 .nav-list .link {
-  display: block;
+  display: inline-flex;
   color: #868686;
   text-decoration: none;
   text-transform: uppercase;
   transition: background-color 250ms linear, color 250ms linear;
+  @media screen and(max-width: $old-mobile) {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  @media screen and(min-width: $mobile) {
+    display: block;
+  }
+  @media screen and(min-width: $tablet) and(max-width: $tablet-landscape - 1px) {
+    padding: 10px;
+  }
+  @media screen and(min-width: $tablet-landscape) and(max-width: $desktop - 1px) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
   @media screen and(min-width: $desktop) {
     padding-left: 21px;
     padding-right: 21px;
