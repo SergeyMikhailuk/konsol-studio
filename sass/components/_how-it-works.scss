@@ -16,7 +16,7 @@
 }
 
 .works-title {
-  font-family: "Gotham - Black";
+  font-family: 'Gotham-Black';
   font-size: 22px;
   font-weight: 400;
   font-style: normal;
@@ -29,7 +29,7 @@
 }
 
 .works-text {
-  font-family: "Lato Light";
+  font-family: 'Lato Light';
   font-weight: 300;
   font-style: normal;
   letter-spacing: normal;
@@ -47,7 +47,7 @@
   @media screen and(min-width: $tablet) and(max-width: $desktop - 1px) {
     flex-wrap: wrap;
     flex-direction: row;
-    align-items: baseline;
+    // align-items: baseline;
   }
 
   @media screen and(min-width: $desktop) {
@@ -59,7 +59,6 @@
   max-width: 400px;
   @media screen and(min-width: $tablet) and(max-width: $desktop - 1px) {
     max-width: 320px;
-    margin-bottom: 15px;
     &:nth-child(odd) {
       margin-right: 10px;
     }
@@ -94,7 +93,7 @@
   align-items: center;
   justify-content: center;
   width: 80px;
-  height: 64px;
+  height: 70px;
   @media screen and(min-width: $desktop) {
     margin-bottom: 58px;
   }
@@ -134,14 +133,14 @@
 }
 
 .pointer.one {
-  left: 200px;
+  left: 240px;
 }
 .pointer.two {
   top: 30px;
-  left: 480px;
+  left: 520px;
 }
 .pointer.three {
-  left: 780px;
+  left: 820px;
 }
 
 .get-start-btn {

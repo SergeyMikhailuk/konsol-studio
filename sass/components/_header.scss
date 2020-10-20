@@ -31,13 +31,17 @@
   text-align: center;
   @media screen and (min-width: $desktop) {
     display: flex;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 31px;
+    padding-bottom: 31px;
   }
 }
 
 .nav-list .item:not(:last-child) {
   margin-bottom: 2px;
+  @media screen and(min-width: $desktop) {
+    margin-bottom: 0;
+    margin-right: 3px;
+  }
 }
 
 .nav-list .link {

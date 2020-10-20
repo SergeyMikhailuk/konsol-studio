@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "Gotham - Black";
+  font-family: 'Gotham-Black';
   src: url(../../font/Gotham-Black.ttf);
 }
 
@@ -497,13 +497,20 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 31px;
+    padding-bottom: 31px;
   }
 }
 
 .nav-list .item:not(:last-child) {
   margin-bottom: 2px;
+}
+
+@media screen and (min-width: 1200px) {
+  .nav-list .item:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 3px;
+  }
 }
 
 .nav-list .link {
@@ -554,7 +561,7 @@ img {
 }
 
 .banner-title {
-  font-family: "Gotham - Black";
+  font-family: 'Gotham-Black';
   font-size: 24px;
   font-weight: 400;
   font-style: normal;
@@ -761,7 +768,7 @@ img {
 }
 
 .works-title {
-  font-family: "Gotham - Black";
+  font-family: 'Gotham-Black';
   font-size: 22px;
   font-weight: 400;
   font-style: normal;
@@ -777,7 +784,7 @@ img {
 }
 
 .works-text {
-  font-family: "Lato Light";
+  font-family: 'Lato Light';
   font-weight: 300;
   font-style: normal;
   letter-spacing: normal;
@@ -810,9 +817,6 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
   }
 }
 
@@ -832,7 +836,6 @@ img {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .steps-list .item {
     max-width: 320px;
-    margin-bottom: 15px;
   }
   .steps-list .item:nth-child(odd) {
     margin-right: 10px;
@@ -892,7 +895,7 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   width: 80px;
-  height: 64px;
+  height: 70px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -941,16 +944,16 @@ img {
 }
 
 .pointer.one {
-  left: 200px;
+  left: 240px;
 }
 
 .pointer.two {
   top: 30px;
-  left: 480px;
+  left: 520px;
 }
 
 .pointer.three {
-  left: 780px;
+  left: 820px;
 }
 
 .get-start-btn {
